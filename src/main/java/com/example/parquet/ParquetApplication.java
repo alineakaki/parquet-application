@@ -7,6 +7,7 @@ import org.apache.parquet.avro.AvroParquetWriter;
 import org.apache.parquet.hadoop.ParquetWriter;
 import org.apache.parquet.hadoop.metadata.CompressionCodecName;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 @SpringBootApplication
 
 public class ParquetApplication {
@@ -33,7 +34,6 @@ public class ParquetApplication {
 					.withPageSize(4 * 1024 * 1024)
 					.build()) {
 
-				// Gerando múltiplos registros
 				int numberOfRecords = args.length > 0 ? Integer.parseInt(args[0]) : 10;
 				for (int i = 0; i < numberOfRecords; i++) {
 					GenericData.Record record = new GenericData.Record(avroSchema);
