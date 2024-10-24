@@ -17,7 +17,7 @@ Antes de executar a aplicação, você deve ter os seguintes softwares instalado
 1. **Clone o repositório:**
 
    ```bash
-   git clone <URL do repositório>
+   git clone git@github.com:alineakaki/parquet-application.git
    cd parquet-application
 
 2. **Compile o projeto:**
